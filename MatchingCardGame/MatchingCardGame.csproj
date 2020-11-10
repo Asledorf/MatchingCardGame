@@ -8,10 +8,16 @@
 
   <ItemGroup>
     <None Remove="Resources\card.png" />
+    <None Remove="Resources\NO.wav" />
+    <None Remove="Resources\Select.wav" />
+    <None Remove="Resources\YES.wav" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Resources\card.png" />
+    <Resource Include="Resources\NO.wav" />
+    <Resource Include="Resources\Select.wav" />
+    <Resource Include="Resources\YES.wav" />
   </ItemGroup>
 
 </Project>

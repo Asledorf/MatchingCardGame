@@ -7,9 +7,18 @@
              mc:Ignorable="d" 
              d:DesignHeight="100" d:DesignWidth="80">
     <Grid>
-        <Button x:Name="btnCard" Visibility="Visible" IsEnabled="{Binding Interactable}" BorderBrush="Black" Background="White" Click="btnCard_Click">
-            <Image x:Name="imgCard" Source="../Resources/card.png"/>
+        <Button HorizontalAlignment="Center" x:Name="btnCard" Visibility="Visible" IsEnabled="{Binding Interactable}" BorderBrush="Black" Background="White" Click="btnCard_Click">
+            <Image x:Name="imgCard" Source="../Resources/card.png" Stretch="None" StretchDirection="Both"/>
         </Button>
-        <Label x:Name="lblSymbol" Visibility="Hidden" FontSize="64" FontFamily="WebDings" HorizontalAlignment="Center" VerticalAlignment="Center" Content="{Binding Symbol}"/>
+        <Label x:Name="lblSymbol" Visibility="Hidden" FontSize="64" FontFamily="WebDings" HorizontalAlignment="Center" VerticalAlignment="Center" Content="{Binding Symbol}">
+            <Label.Background>
+                <RadialGradientBrush MappingMode="RelativeToBoundingBox">
+                    <GradientStop Color="#00000000"/>
+                    <GradientStop Color="White" Offset="0.95"/>
+                    <GradientStop Color="Transparent" Offset="0.9"/>
+                    <GradientStop Color="Transparent" Offset="1"/>
+                </RadialGradientBrush>
+            </Label.Background>
+        </Label>
     </Grid>
 </UserControl>

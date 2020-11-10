@@ -45,8 +45,8 @@ namespace MatchingCardGame.Controls
         {
             INACTIVE,
             IDLE,
-            FLIPPED,
-            MATCHED
+            FLIPPED,    //card is flipped 
+            MATCHED     //card has been matched
         }
 
         public GameWindow Owner { get; set; }
@@ -73,7 +73,6 @@ namespace MatchingCardGame.Controls
             get { return interactable; }
             set
             {
-                //Console.WriteLine("Interactable for: \"" + this.Symbol + "\" has been set to " + value);
                 if (value != interactable)
                 {
                     interactable = value;
