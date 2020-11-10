@@ -225,6 +225,7 @@ namespace MatchingCardGame
 		}
 		private void Start_Click(object sender, RoutedEventArgs e)
 		{
+
 			if (allowNewGame)
 			{
 				//card.State = Card.eState.IDLE;
